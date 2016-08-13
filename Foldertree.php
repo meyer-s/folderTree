@@ -7,7 +7,7 @@
 
 */
 
-@WebFilter(urlPatterns="/*")
+@WebFilter(urlPatterns="/foldertree/*")
 public class AllowAccessFilter implements Filter {
     @Override
     public void doFilter(ServletRequest sRequest, ServletResponse sResponse, FilterChain chain) throws IOException, ServletException {
