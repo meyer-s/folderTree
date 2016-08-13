@@ -1,0 +1,3 @@
+The WMFO Projects calendar may be viewed online [here](https://www.google.com/calendar/embed?src=dl17lndtum30q6mevaijfhuk4k@group.calendar.google.com&ctz=America/New_York&gsessionid=OK "https://www.google.com/calendar/embed? data-cke-saved-src=dl17lndtum30q6mevaijfhuk4k@group.calendar.google.com&ctz=America/New_York&gsessionid=OK src=dl17lndtum30q6mevaijfhuk4k@group.calendar.google.com&ctz=America/New_York&gsessionid=OK") or below. This calendar contains administrative details regarding WMFO projects, volunteer opportunities, and happenings. Questions about this calendar or the information on it should be directed to the [General Manager](https://wiki.wmfo.org/About_WMFO/Executive_Board/GM's_Office "GM's Office").
+
+*
