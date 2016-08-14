@@ -10,7 +10,7 @@ $(document).ready( function() {
 
 	$( '#container' ).html( '<ul class="filetree start"><li class="wait">' + 'Generating Tree...' + '<li></ul>' );
 	
-	getfilelist( $('#container') , 'wiki-master' );
+	getfilelist( $('#container') , 'Sample' );
 	
 	function getfilelist( cont, root ) {
 	
@@ -20,7 +20,7 @@ $(document).ready( function() {
 	
 			$( cont ).find( '.start' ).html( '' );
 			$( cont ).removeClass( 'wait' ).append( data );
-			if( 'wiki-master' == root ) 
+			if( 'Sample' == root ) 
 				$( cont ).find('UL:hidden').show();
 			else 
 				$( cont ).find('UL:hidden').slideDown({ duration: 500, easing: null });
