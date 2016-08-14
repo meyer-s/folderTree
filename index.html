@@ -3,14 +3,14 @@
 <head>
 	<title>WMFO</title>
 	<link rel="stylesheet" href="css/filetree.css" type="text/css" >
-	<script type="text/javascript" src="jquery.js"></script>
+	<script src="jquery.js" type="text/javascript" ></script>
 	
 <script type="text/javascript" >
 $(document).ready( function() {
 
 	$( '#container' ).html( '<ul class="filetree start"><li class="wait">' + 'Generating Tree...' + '<li></ul>' );
 	
-	getfilelist( $('#container') , 'wiki-master/*' );
+	getfilelist( $('#container') , 'wiki-master' );
 	
 	function getfilelist( cont, root ) {
 	
@@ -20,7 +20,7 @@ $(document).ready( function() {
 	
 			$( cont ).find( '.start' ).html( '' );
 			$( cont ).removeClass( 'wait' ).append( data );
-			if( 'Sample' == root ) 
+			if( 'wiki-master' == root ) 
 				$( cont ).find('UL:hidden').show();
 			else 
 				$( cont ).find('UL:hidden').slideDown({ duration: 500, easing: null });
