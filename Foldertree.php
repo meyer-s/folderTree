@@ -7,18 +7,17 @@
 
 */
 
-@WebFilter(urlPatterns="/foldertree/*")
-public class AllowAccessFilter implements Filter {
-    @Override
-    public void doFilter(ServletRequest sRequest, ServletResponse sResponse, FilterChain chain) throws IOException, ServletException {
-        System.out.println("in AllowAccessFilter.doFilter");
-        HttpServletRequest request = (HttpServletRequest)sRequest;
-        HttpServletResponse response = (HttpServletResponse)sResponse;
-        response.setHeader("Access-Control-Allow-Origin", "*");
-        response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT");
-        response.setHeader("Access-Control-Allow-Headers", "Content-Type"); 
-        chain.doFilter(request, response);
+protected void Application_BeginRequest(object sender, EventArgs e)
+{
+    HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "*");
+    if (HttpContext.Current.Request.HttpMethod == "OPTIONS")
+    {
+        HttpContext.Current.Response.AddHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+        HttpContext.Current.Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept");
+        HttpContext.Current.Response.AddHeader("Access-Control-Max-Age", "1728000");
+        HttpContext.Current.Response.End();
     }
+
 }
 
 class treeview {
